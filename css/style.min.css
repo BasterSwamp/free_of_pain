@@ -1174,6 +1174,9 @@ header {
   }
 }
 @media (max-width: 29.99875em) {
+  .chanel h2 {
+    position: absolute;
+  }
   .chanel__svg {
     display: none;
   }
