@@ -172,16 +172,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list-circle {
+  width: 16px;
+  height: 15px;
+}
+
+.list-circle-white {
   width: 33px;
   height: 33px;
 }
 
-@media (max-width: 61.99875em) {
-  .list-circle {
-    width: 22px;
-    height: 22px;
-  }
-}
 h2 {
   display: block;
   font-size: 3rem;
@@ -192,6 +191,14 @@ h2 {
 }
 
 @media (max-width: 61.99875em) {
+  .list-circle {
+    width: 11px;
+    height: 10px;
+  }
+  .list-circle-white {
+    width: 22px;
+    height: 22px;
+  }
   h2 {
     font-size: 2.375rem;
   }
@@ -533,7 +540,7 @@ header {
   z-index: 5;
 }
 .main-page .main-btn .btn-text .main-btn__link ellipse {
-  fill: #d6ae1b;
+  fill: #bb9856;
 }
 .main-page .main-btn .btn-text .main-btn__link text {
   font-size: 1rem;
@@ -1030,8 +1037,11 @@ header {
 .more-info a {
   display: inline-block;
   text-transform: uppercase;
-  text-decoration: underline;
   color: #21172e;
+  background: #e3e3e3;
+  border: 1px solid #d6ae1b;
+  border-radius: 6px;
+  padding: 13px 48px;
 }
 @media (max-width: 87.5em) {
   .more-info {
@@ -1046,6 +1056,10 @@ header {
   .more-info p {
     max-height: 126px;
     text-align: justify;
+  }
+  .more-info a {
+    font-size: 1rem;
+    padding: 18px 40px;
   }
 }
 
