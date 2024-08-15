@@ -809,6 +809,9 @@ header {
   .story p {
     margin-top: 20px;
   }
+  .story__btn {
+    padding-right: 38px;
+  }
 }
 @media (max-width: 61.99875em) {
   .story {
@@ -835,6 +838,7 @@ header {
   .story__btn {
     text-align: center;
     margin-top: 57px;
+    padding-right: 0;
   }
 }
 @media (max-width: 29.99875em) {
@@ -933,7 +937,7 @@ header {
 }
 @media (max-width: 87.5em) {
   .survey__body {
-    padding: 116px 50px 212px;
+    padding: 116px 70px 212px;
   }
   .survey__body ul li {
     max-width: 485px;
@@ -973,6 +977,9 @@ header {
   }
   .survey__body ul li {
     max-width: 100%;
+  }
+  .survey__body ul li::before {
+    left: -29px;
   }
   .survey__body a {
     margin: 0 57px;
@@ -1029,11 +1036,6 @@ header {
   max-height: 64px;
   transition: max-height 0.1s ease;
 }
-.more-info p.open {
-  overflow: visible;
-  max-height: 1000px;
-  transition: max-height 0.8s ease;
-}
 .more-info a {
   display: inline-block;
   text-transform: uppercase;
@@ -1042,6 +1044,14 @@ header {
   border: 1px solid #d6ae1b;
   border-radius: 6px;
   padding: 13px 48px;
+}
+.more-info.open p {
+  overflow: visible;
+  max-height: 1000px;
+  transition: max-height 0.8s ease;
+}
+.more-info.open a {
+  display: none;
 }
 @media (max-width: 87.5em) {
   .more-info {
@@ -1161,11 +1171,22 @@ header {
 .chanel__svg foreignObject {
   text-align: center;
   font-size: 1.125rem;
-  padding: 16px 8px 0 8px;
 }
 .chanel__svg foreignObject h3 {
   font-weight: 600;
   text-transform: uppercase;
+}
+.chanel__svg foreignObject:nth-child(3) {
+  padding: 27px 8px 0 8px;
+}
+.chanel__svg foreignObject:nth-child(5) {
+  padding: 27px 8px 0 8px;
+}
+.chanel__svg foreignObject:nth-child(7) {
+  padding: 38px 8px 0 8px;
+}
+.chanel__svg foreignObject:nth-child(9) {
+  padding: 38px 8px 0 8px;
 }
 .chanel__svg text {
   font-size: 1.1875rem;
@@ -1206,11 +1227,22 @@ header {
   .chanel__svg-mob foreignObject {
     text-align: center;
     font-size: 0.8125rem;
-    padding: 20px 8px 0 8px;
   }
   .chanel__svg-mob foreignObject h3 {
     font-weight: 600;
     text-transform: uppercase;
+  }
+  .chanel__svg-mob foreignObject:nth-child(3) {
+    padding: 29px 8px 0 8px;
+  }
+  .chanel__svg-mob foreignObject:nth-child(5) {
+    padding: 29px 8px 0 8px;
+  }
+  .chanel__svg-mob foreignObject:nth-child(7) {
+    padding: 36px 8px 0 8px;
+  }
+  .chanel__svg-mob foreignObject:nth-child(9) {
+    padding: 36px 8px 0 8px;
   }
   .chanel__svg-mob text {
     font-size: 0.9375rem;
@@ -1237,7 +1269,7 @@ header {
 }
 .target__section {
   background: #dbd5e1;
-  border: 2px solid #7b5da5;
+  border: 1px solid #7b5da5;
   border-radius: clamp(0.844rem, 0.54rem + 1.01vw, 1.453rem);
   overflow: hidden;
   flex: 0 1 50%;
@@ -1248,7 +1280,7 @@ header {
 }
 .target ul {
   background: #fff;
-  border: 2px solid #7b5da5;
+  border: 1px solid #7b5da5;
   border-radius: clamp(0.844rem, 0.54rem + 1.01vw, 1.453rem);
   padding: clamp(0.938rem, -0.375rem + 4.38vw, 3.563rem) clamp(0.938rem, 3.13vw, 2.813rem) clamp(0.625rem, -0.563rem + 3.96vw, 3rem) clamp(1.875rem, 1.406rem + 1.56vw, 2.813rem);
   height: 100%;
